@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+#input-meal{
+    background-color: #F8F7F5
+}
+#search-button{
+    color: white;
+    background-color: #F06C4E;
+}
+.warning-text{
+    margin:20px 0;
+    color: red;
+}
+
+.meal-image{
+    width: 100%;
+}
+.meal-title{
+    text-align: center;
+    margin-top: 10px;
+}
+.meal-card{
+    border-radius: 10px;
+    background-color: #F8F7F5;
+    height: 100%;
+    overflow: hidden;
+    box-shadow:1px 3px 10px gray;
+}
+
+
+#meal-summery{
+    display: none;
+    margin-bottom: 15px;
+    background-color: #F8F7F5;
+    padding: 20px;
+    border-radius: 10px;
+}
+.meal-summery-image{
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+}
+.meal-summery-title{
+    margin-top: 15px;
+    color: #363958;
+    font-weight: 600;
+}
+
+li{
+    font-size: large;
+}
+ul{
+    list-style-type:none;
+}

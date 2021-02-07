@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- my own style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header section start -->
+    <header>
+       <div class="container">
+            <nav class="container navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand me-auto" href="#"><img src="images/logo.png" width="100px" alt="hungry-monster"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Recipes</a>
+                        <a class="nav-link" href="#">blog</a>
+                    </div>
+                </div>
+            </nav>
+       </div>
+
+        <!-- search bar -->
+        <div class="container">
+            <div class="col-md-6 m-auto p-5">
+                <div class="input-group mb-1">
+                    <!-- search input -->
+                    <input id="input-meal" type="text" required class="form-control" placeholder="Search for meal">
+                    <div class="input-group-append">
+                        <button id="search-button" type="button" class="btn">Search</button>
+                    </div>
+                </div>
+
+                <!-- If search input is not matched it will show warning text-->
+                <div class="warning-text">
+                    <p id="warning-text"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- main section start -->
+    <section class="container">
+        <!-- Single meal Details. Default:Hidden -->
+        <div id="meal-summery" class="container">
+            <div id="meal-summery-display" class="row row-cols-1  row-cols-md-2 g-1"> </div>
+            <div id="meal-details-display"></div>
+        </div>
+
+        <!--Search result -->
+        <div class="meal-container mb-5">
+            <div id="meal-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4"> </div>
+        </div>
+    </section>
+     <!-- main section end -->
+
+    <!-- bootstrap js link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- my custom script link here -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
